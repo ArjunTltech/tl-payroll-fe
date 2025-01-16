@@ -58,7 +58,7 @@ const Login = () => {
         const { accessToken } = response.data;
         setAccessToken(accessToken);
         toast.success("Login successful!");
-        navigate('/')
+        navigate('/' )
 
       } else {
         toast.error(response.data.message || "Login failed!");

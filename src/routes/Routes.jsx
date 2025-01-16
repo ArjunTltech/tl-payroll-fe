@@ -1,6 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
-import { LoginPage } from "../page/LoginPage";
 import DashboardLayout from "../layouts/DashboardLayout";
+import ProtectedRoute from "./ProtectedRoute";
+import HomePage from "../page/home/HomePage";
+import { LoginPage } from "../page/auth/LoginPage";
 
 
 
@@ -8,7 +10,7 @@ import DashboardLayout from "../layouts/DashboardLayout";
 export const router = createBrowserRouter([
     {
         path: '/login',
-        element: <LoginPage />,
+        element:    <ProtectedRoute isLoginPage={true}><LoginPage /></ProtectedRoute>,
     },
     // {
     //     path: '/register',
@@ -25,7 +27,7 @@ export const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: <h1>Dashboard</h1>
+                element: <ProtectedRoute><HomePage/></ProtectedRoute>
             },
 
         ],

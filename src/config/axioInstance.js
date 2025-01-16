@@ -8,11 +8,26 @@ const axiosInstance = axios.create({
 
 axiosInstance.interceptors.request.use(
   (config) => {
-    const { accessToken } = useAuthStore.getState(); 
+    const { accessToken } = useAuthStore.getState();
+    console.log(accessToken,'accessToken');
+    
     if (accessToken) {
       config.headers["Authorization"] = `Bearer ${accessToken}`;
     }
     return config;
+  },
+  (error) => {
+    return Promise.reject(error);
+  }
+);
+
+axiosInstance.interceptors.response.use(
+  (response) => {
+    const newAccessToken = response.headers["new-access-token"];
+    if (newAccessToken) {
+      useAuthStore.getState().setAccessToken(newAccessToken);
+    }
+    return response;
   },
   (error) => {
     return Promise.reject(error);

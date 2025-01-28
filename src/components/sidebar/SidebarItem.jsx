@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const SidebarItem = ({ icon: Icon, text, badge,to }) => {
   return (
     <Link to={to}>
-    <ListItem>
+    <ListItem className="hover:bg-[#ECF2FF] hover:text-[#]">
       <ListItemPrefix>
         <Icon className="h-5 w-5" />
       </ListItemPrefix>

@@ -1,8 +1,12 @@
 import React from 'react'
+import Dashboard from '../../components/dashboard/Dashboard'
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <div>
+      <h1 className="text-2xl font-bold mb-6 ps-6">Dashboard</h1>
+      <Dashboard />
+    </div>
   )
 }
 

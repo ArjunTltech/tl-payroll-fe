@@ -7,8 +7,8 @@ import {
     Cog6ToothIcon,
     InboxIcon,
     PowerIcon,
+    CurrencyDollarIcon
   } from "@heroicons/react/24/solid";
-//   import './Sidebar.css';
 import SidebarItem from './SidebarItem';
 
 const Sidebar = () => {
@@ -19,11 +19,12 @@ const Sidebar = () => {
           Sidebar
         </Typography>
       </div>
-      <List>
+      <List >
         <SidebarItem icon={PresentationChartBarIcon} text="Dashboard"  to="/"/>
-        <SidebarItem icon={ShoppingBagIcon} text="E-Commerce" to="" />
-        <SidebarItem icon={InboxIcon} text="Inbox" badge="14" to="" />
-        <SidebarItem icon={UserCircleIcon} text="Profile" to="" />
+        <SidebarItem icon={ShoppingBagIcon} text="Employees" to="" />
+        <SidebarItem icon={CurrencyDollarIcon} text="Payment History" to="" />
+        {/* <SidebarItem icon={InboxIcon} text="Inbox" badge="14" to="" /> */}
+        {/* <SidebarItem icon={UserCircleIcon} text="Profile" to="" /> */}
         <SidebarItem icon={Cog6ToothIcon} text="Settings"  to=""/>
         <SidebarItem icon={PowerIcon} text="Log Out" to="" />
       </List>

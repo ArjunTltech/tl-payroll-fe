@@ -5,7 +5,7 @@ const SummaryCards = ({ totalEmployees, monthlyPayroll, avgAttendance }) => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
       {/* Total Team Members Card */}
-      <div className="card flex flex-col bg-white shadow-md rounded-lg p-6">
+      <div className="card flex flex-col bg-white border-[#e2e8f0] shadow-md rounded-lg p-6 ">
         <div className="flex items-center gap-4 mb-4">
           <div className="bg-indigo-100 p-3 rounded-full">
             <Users className="text-indigo-600 w-6 h-6" />
@@ -17,7 +17,7 @@ const SummaryCards = ({ totalEmployees, monthlyPayroll, avgAttendance }) => {
       </div>
 
       {/* Monthly Payroll Card */}
-      <div className="card flex flex-col bg-white shadow-md rounded-lg p-6">
+      <div className="card flex flex-col bg-white border-[#e2e8f0] shadow-md rounded-lg p-6">
         <div className="flex items-center gap-4 mb-4">
           <div className="bg-green-100 p-3 rounded-full">
             <DollarSign className="text-green-600 w-6 h-6" />
@@ -29,7 +29,7 @@ const SummaryCards = ({ totalEmployees, monthlyPayroll, avgAttendance }) => {
       </div>
 
       {/* Average Attendance Card */}
-      <div className="card flex flex-col bg-white shadow-md rounded-lg p-6">
+      <div className="card flex flex-col bg-white border-[#e2e8f0] shadow-md rounded-lg p-6">
         <div className="flex items-center gap-4 mb-4">
           <div className="bg-blue-100 p-3 rounded-full">
             <Activity className="text-blue-600 w-6 h-6" />

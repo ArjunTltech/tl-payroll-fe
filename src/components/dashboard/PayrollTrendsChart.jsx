@@ -21,8 +21,8 @@ const PayrollTrendsChart = ({ data }) => {
   ];
 
   return (
-    <div className="card">
-      <div className="card-header flex justify-between items-center">
+    <div className="card ">
+      <div className="card-header flex justify-between items-center ">
         <div className="flex items-center gap-2">
           <BarChart3 className="text-indigo-500" />
           <h3 className="text-lg font-semibold">Payroll Trends</h3>

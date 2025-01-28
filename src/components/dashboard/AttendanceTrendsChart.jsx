@@ -13,7 +13,7 @@ const AttendanceTrendsChart = ({ data }) => {
   ];
 
   return (
-    <div className="card md:col-span-2">
+    <div className="card md:col-span-2 ">
       <div className="card-header flex justify-between items-center">
         <div className="flex items-center gap-2">
           <LineChart className="text-indigo-500" />

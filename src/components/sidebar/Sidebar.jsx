@@ -21,7 +21,7 @@ const Sidebar = () => {
       </div>
       <List >
         <SidebarItem icon={PresentationChartBarIcon} text="Dashboard"  to="/"/>
-        <SidebarItem icon={ShoppingBagIcon} text="Employees" to="" />
+        <SidebarItem icon={ShoppingBagIcon} text="Employees" to="/employees" />
         <SidebarItem icon={CurrencyDollarIcon} text="Payment History" to="" />
         {/* <SidebarItem icon={InboxIcon} text="Inbox" badge="14" to="" /> */}
         {/* <SidebarItem icon={UserCircleIcon} text="Profile" to="" /> */}

@@ -22,11 +22,9 @@ const Sidebar = () => {
       <List >
         <SidebarItem icon={PresentationChartBarIcon} text="Dashboard"  to="/"/>
         <SidebarItem icon={ShoppingBagIcon} text="Employees" to="/employees" />
-        <SidebarItem icon={CurrencyDollarIcon} text="Payment History" to="" />
-        {/* <SidebarItem icon={InboxIcon} text="Inbox" badge="14" to="" /> */}
-        {/* <SidebarItem icon={UserCircleIcon} text="Profile" to="" /> */}
-        <SidebarItem icon={Cog6ToothIcon} text="Settings"  to=""/>
-        <SidebarItem icon={PowerIcon} text="Log Out" to="" />
+        <SidebarItem icon={CurrencyDollarIcon} text="Payment History" to="/payment-history" />
+        {/* <SidebarItem icon={Cog6ToothIcon} text="Settings"  to=""/> */}
+        <SidebarItem icon={PowerIcon} text="Log Out" to="/login" />
       </List>
     </Card>
   );

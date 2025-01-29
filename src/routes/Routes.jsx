@@ -5,6 +5,7 @@ import HomePage from "../page/home/HomePage";
 import { LoginPage } from "../page/auth/LoginPage";
 import Employees from "../page/employees/Employees";
 import AddEmployee from "../page/addemp/AddEmp";
+import PaymentHistory from "../page/payment-history/PaymentHistory";
 
 
 
@@ -42,10 +43,11 @@ export const router = createBrowserRouter([
                 element: <ProtectedRoute><AddEmployee/></ProtectedRoute>,
               },
               
-            // {
-            //     index: true,
-            //     element: <ProtectedRoute><PaymentHistory/></ProtectedRoute>
-            // },
+            {
+                path: 'payment-history',
+                index: true,
+                element: <ProtectedRoute><PaymentHistory/></ProtectedRoute>
+            },
             // {
             //     index: true,
             //     element: <ProtectedRoute><Profile/></ProtectedRoute>

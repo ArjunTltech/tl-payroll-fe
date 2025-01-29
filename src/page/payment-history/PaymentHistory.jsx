@@ -1,8 +1,9 @@
 import React from 'react'
+import PaymentTable from '../../components/Payment-history/PaymentTable'
 
 const PaymentHistory = () => {
   return (
-    <div>PaymentHistory</div>
+    <div><PaymentTable/></div>
   )
 }
 
